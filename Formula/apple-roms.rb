@@ -6,7 +6,7 @@ class AppleRoms < Formula
   homepage "https://github.com/hekapooios/hekapooios.github.io"
   head "https://github.com/hekapooios/hekapooios.github.io.git"
 
-  install do
+  def install do
     pkgshare.install Dir['resources/SEPROM/*']
     pkgshare.install Dir['resources/APROM/*']
   end
