@@ -4,10 +4,10 @@
 class YoloDsc < Formula
   desc "The dyld-shared-cache extractor of last resort"
   homepage "https://github.com/rickmark/yolo_dsc"
-  url "https://github.com/rickmark/yolo_dsc/archive/refs/tags/v1.tar.gz"
-  version "1"
-  sha256 "4f057fe61e38e0459ae47ae73bf8d059ca2c74f5c421bde9ded4c0250834b451"
-  
+  url "https://github.com/rickmark/yolo_dsc/archive/refs/tags/v1.0.1.tar.gz"
+  version "1.0.1"
+  sha256 "bdd51f3f88587884796e10422ff14042308e1bc5b4faacbcc0925e8804c3d760"
+
   depends_on "cmake" => :build
 
   def install
