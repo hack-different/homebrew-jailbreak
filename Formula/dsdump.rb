@@ -11,7 +11,7 @@ class Dsdump < Formula
   sha256 "fe2de7d58048f92735c89686fd8c5bab92b5e8d0cf7ba6dce4ab00e62d0c7529"
 
   def install
-    
+
 
     bin.install "selander/dsdump"
   end
