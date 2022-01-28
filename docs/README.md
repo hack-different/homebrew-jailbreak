@@ -1,6 +1,6 @@
 # Homebrew `hack-different/jailbreak`
 
-We have created a tap for homebrew that contains the required info for installing jailbreak related tooling
+We have created a tap for homebrew that contains the required info for installing jailbreak related tooling.
 
 ---
 
