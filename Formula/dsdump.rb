@@ -1,7 +1,7 @@
 
 
 # Formula taken from dsdump repository
-class dsdump < Formula
+class Dsdump < Formula
   desc "An improved nm + Objective-C & Swift class-dump"
   homepage "https://github.com/DerekSelander/dsdump"
   version "0.1.0"
