@@ -26,7 +26,9 @@ Taps are independent "repos" for [Homebrew](https://brew.sh) containing installa
 
 Formulae are ruby source files containing "instructions" on how to install a package. Their documentation is located [Here](https://docs.brew.sh/Formula-Cookbook)
 
-### Helpful Tools
+### Languages
+
+#### Python
 
 `poet` - https://github.com/tdsmith/homebrew-pypi-poet -- Tool for generating HomeBrew Formulae for installing pypi projects.
 
