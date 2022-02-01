@@ -5,8 +5,8 @@
 class GoApfs < Formula
   desc "APFS parser written in pure Go"
   homepage "https://github.com/blacktop/go-apfs"
-  head "https://github.com/blacktop/go-apfs.git"
   version "1.0.12"
+  head "https://github.com/blacktop/go-apfs.git"
   depends_on :macos
 
   on_macos do
@@ -22,6 +22,6 @@ class GoApfs < Formula
   end
 
   test do
-    system "#{bin}/apfs --version"
+    system "#{bin}/apfs", "--version"
   end
 end

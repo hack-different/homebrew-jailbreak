@@ -18,6 +18,6 @@ class Lporg < Formula
   end
 
   test do
-    system "#{bin}/lporg --version"
+    system "#{bin}/lporg", "--version"
   end
 end

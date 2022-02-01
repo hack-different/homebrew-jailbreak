@@ -1,5 +1,5 @@
 class SeccompGen < Formula
-  desc "Docker Secure Computing Profile Generator."
+  desc "Docker Secure Computing Profile Generator"
   homepage "https://github.com/blacktop/seccomp-gen"
   url "https://github.com/blacktop/seccomp-gen/releases/download/v1.1.4/seccomp-gen_1.1.4_macOS_amd64.tar.gz"
   version "1.1.4"
@@ -10,6 +10,6 @@ class SeccompGen < Formula
   end
 
   test do
-    system "#{bin}/scgen --version"
+    system "#{bin}/scgen", "--version"
   end
 end

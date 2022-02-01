@@ -7,6 +7,7 @@ class Disass < Formula
   homepage "https://github.com/blacktop/arm64-cgo"
   version "1.0.51"
   depends_on :macos
+  depends_on "bat" => :optional
 
   on_macos do
     url "https://github.com/blacktop/arm64-cgo/releases/download/v1.0.51/disass_1.0.51_macOS_universal.tar.gz"
@@ -20,9 +21,7 @@ class Disass < Formula
     end
   end
 
-  depends_on "bat" => :optional
-
   test do
-    system "#{bin}/disass --version"
+    system "#{bin}/disass", "--version"
   end
 end

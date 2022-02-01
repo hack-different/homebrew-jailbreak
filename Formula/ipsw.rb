@@ -7,6 +7,7 @@ class Ipsw < Formula
   homepage "https://github.com/blacktop/ipsw"
   version "3.1.45"
   depends_on :macos
+  depends_on "bat" => :optional
 
   on_macos do
     if Hardware::CPU.arm?
@@ -33,9 +34,7 @@ class Ipsw < Formula
     end
   end
 
-  depends_on "bat" => :optional
-
   test do
-    system "#{bin}/ipsw --version"
+    system "#{bin}/ipsw", "--version"
   end
 end

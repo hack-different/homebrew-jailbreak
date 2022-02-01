@@ -36,6 +36,6 @@ class Scgen < Formula
   end
 
   test do
-    system "#{bin}/scgen --version"
+    system "#{bin}/scgen", "--version"
   end
 end

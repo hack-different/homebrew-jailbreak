@@ -5,7 +5,7 @@ class Ktool < Formula
   include Language::Python::Virtualenv
 
   # TODO: better description tbh
-  desc "Cross platform MachO/ObjC Analysis/Editing/Introspection cli toolkit, library, and terminal GUI."
+  desc "Cross platform MachO/ObjC Analysis/Editing/Introspection cli toolkit, library, and terminal GUI"
   homepage "https://github.com/cxnder/ktool"
   url "https://files.pythonhosted.org/packages/b8/b8/1588dba876e687bcb5f5cf9153a402a36396956e28613d2d885a37e39cf7/k2l-0.20.1.tar.gz"
   sha256 "77c3d271983e02d8480597366038b82957259a0eca6ade3b3968554f9d8e8b0e"
