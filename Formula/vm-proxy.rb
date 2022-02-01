@@ -1,5 +1,5 @@
 class VmProxy < Formula
-  desc "VM Proxy Server - Allows hypervisors to be controlled from docker containers"
+  desc "Allows hypervisors to be controlled from docker containers"
   homepage "https://github.com/blacktop/vm-proxy"
   url "https://github.com/blacktop/vm-proxy/releases/download/18.03.9-dev/vm-proxy_18.03.9-dev_macOS_amd64.tar.gz"
   version "18.03.9-dev"

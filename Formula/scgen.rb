@@ -5,16 +5,9 @@
 class Scgen < Formula
   desc "Docker Secure Computing Profile Generator"
   homepage "https://github.com/blacktop/seccomp-gen"
+  url "https://github.com/blacktop/seccomp-gen/releases/download/v1.1.5/scgen_1.1.5_macOS_universal.tar.gz"
   version "1.1.5"
-
-  on_macos do
-    url "https://github.com/blacktop/seccomp-gen/releases/download/v1.1.5/scgen_1.1.5_macOS_universal.tar.gz"
-    sha256 "c7b4dcf3279e4ce9b89c125cfd86d21bacdc92e5c6518d80e0f16f676894091a"
-
-    def install
-      bin.install "scgen"
-    end
-  end
+  sha256 "c7b4dcf3279e4ce9b89c125cfd86d21bacdc92e5c6518d80e0f16f676894091a"
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
@@ -25,6 +18,7 @@ class Scgen < Formula
         bin.install "scgen"
       end
     end
+
     if Hardware::CPU.intel?
       url "https://github.com/blacktop/seccomp-gen/releases/download/v1.1.5/scgen_1.1.5_linux_x86_64.tar.gz"
       sha256 "853dc658089f473477b56feaf70395900419f391af126621add53924a0a98fa8"
@@ -33,6 +27,10 @@ class Scgen < Formula
         bin.install "scgen"
       end
     end
+  end
+
+  def install
+    bin.install "scgen"
   end
 
   test do

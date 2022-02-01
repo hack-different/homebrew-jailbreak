@@ -5,20 +5,18 @@
 class Disass < Formula
   desc "MachO ARMv9-a Disassembler"
   homepage "https://github.com/blacktop/arm64-cgo"
+  url "https://github.com/blacktop/arm64-cgo/releases/download/v1.0.51/disass_1.0.51_macOS_universal.tar.gz"
   version "1.0.51"
+  sha256 "3c950df9b4c97fabcaa039698dcd6880eef0bd661b60010a67befbc5197c079e"
+
   depends_on :macos
   depends_on "bat" => :optional
 
-  on_macos do
-    url "https://github.com/blacktop/arm64-cgo/releases/download/v1.0.51/disass_1.0.51_macOS_universal.tar.gz"
-    sha256 "3c950df9b4c97fabcaa039698dcd6880eef0bd661b60010a67befbc5197c079e"
-
-    def install
-      bin.install "disass"
-      bash_completion.install "completions/_bash" => "disass"
-      zsh_completion.install "completions/_zsh" => "_disass"
-      fish_completion.install "completions/_fish" => "disass.fish"
-    end
+  def install
+    bin.install "disass"
+    bash_completion.install "completions/_bash" => "disass"
+    zsh_completion.install "completions/_zsh" => "_disass"
+    fish_completion.install "completions/_fish" => "disass.fish"
   end
 
   test do
