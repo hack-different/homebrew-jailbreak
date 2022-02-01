@@ -5,7 +5,7 @@
 # form of the height of the "main" branch
 class AppleRoms < Formula
   desc "Known SecureROM and SEPROM binaries"
-  homepage "https://github.com/hekapooios/hekapooios.github.io"
+  homepage "https://hekapooios.github.io"
   head "https://github.com/hekapooios/hekapooios.github.io.git"
 
   def install
