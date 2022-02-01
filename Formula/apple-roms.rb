@@ -9,7 +9,7 @@ class AppleRoms < Formula
   head "https://github.com/hekapooios/hekapooios.github.io.git"
 
   def install
-    pkgshare.install Dir['resources/SEPROM/*']
-    pkgshare.install Dir['resources/APROM/*']
+    pkgshare.install Dir["resources/SEPROM/*"]
+    pkgshare.install Dir["resources/APROM/*"]
   end
 end
