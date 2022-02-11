@@ -1,5 +1,5 @@
 class GoRop < Formula
-  desc "ROP Gadget Finder."
+  desc "ROP Gadget Finder"
   homepage "https://github.com/blacktop/go-rop"
   url "https://github.com/blacktop/go-rop/releases/download/0.1.1/go-rop_0.1.1_macOS_amd64.tar.gz"
   version "0.1.1"
@@ -10,6 +10,6 @@ class GoRop < Formula
   end
 
   test do
-    system "#{bin}/go-rop --version"
+    system "#{bin}/go-rop", "--version"
   end
 end

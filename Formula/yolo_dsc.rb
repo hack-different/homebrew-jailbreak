@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class YoloDsc < Formula
-  desc "The dyld-shared-cache extractor of last resort"
+  desc "DSC (dyld-shared-cache) extractor of last resort"
   homepage "https://github.com/rickmark/yolo_dsc"
   url "https://github.com/rickmark/yolo_dsc/archive/refs/tags/v1.0.1.tar.gz"
   version "1.0.1"
@@ -13,7 +13,7 @@ class YoloDsc < Formula
   def install
     system "cmake", ".", *std_cmake_args
 
-    system 'make'
+    system "make"
 
     system "make", "install"
   end

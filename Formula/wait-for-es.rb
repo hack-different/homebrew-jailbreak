@@ -11,6 +11,6 @@ class WaitForEs < Formula
   end
 
   test do
-    system "#{bin}/wait-for-es --version"
+    system "#{bin}/wait-for-es", "--version"
   end
 end
