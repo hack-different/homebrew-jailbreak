@@ -8,6 +8,8 @@ class Img4lib < Formula
     url "https://github.com/xerub/img4lib/releases/download/1.0/img4lib-2020-10-27.tar.gz"
 
     def install
+        system "make"
+        
         bin.install "img4"
     end
 end
