@@ -20,24 +20,6 @@ Think and Hack Different - in total opposition to `homebrew-core` we do not acce
 
 Who ships versions anyway? Use `main` and live dangerously.
 
-## Contributing
-
-### What is a "tap"?
-
-Taps are independent "repos" for [Homebrew](https://brew.sh) containing installable packages.
-
-[Read their official documentation here](https://docs.brew.sh/Taps)
-
-### What is a "Formula"?
-
-Formulae are ruby source files containing "instructions" on how to install a package. Their documentation is located [Here](https://docs.brew.sh/Formula-Cookbook)
-
-### Languages
-
-#### Python
-
-`poet` - https://github.com/tdsmith/homebrew-pypi-poet -- Tool for generating HomeBrew Formulae for installing pypi projects.
-
 
 ## credits, thanks and shameless theft
 
